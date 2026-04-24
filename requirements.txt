@@ -1,0 +1,20 @@
+sentence-transformers>=2.2.2
+faiss-cpu; platform_system == "Windows" or platform_system == "Linux"
+numpy
+scikit-learn
+# Required for image loading
+Pillow>=9.0.0
+# Required for HTTP requests
+requests>=2.25.0
+# TTS
+pyttsx3
+# System audio capture
+soundcard
+# Local ASR for audio roast
+faster-whisper
+# optional global hotkey support
+keyboard
+# Optional: 飞书集成需要安装 lark-oapi (pip install lark-oapi)
+# Optional: 系统密钥环存储需要安装 keyring (pip install keyring)
+# Note: On Windows, installing faiss-cpu via pip may require a compatible wheel.
+# If faiss installation fails, consider using `pip install faiss-cpu -f https://download.pytorch.org/whl/torch_stable.html`

@@ -1,0 +1,34 @@
+# ===========================================
+# iGEM VTuber 配置文件
+# ===========================================
+
+vtuber:
+  bot_name: "iGEM助手"
+
+# B站直播配置
+bilibili:
+  enable: true
+  room_id: 12345678  # <-- 修改为你的直播间ID（真实房间号，不是短号）
+  credentials:
+    # 从浏览器Cookie获取（登录B站后按F12 -> Application -> Cookies）
+    sessdata: ""     # <-- 必填
+    bili_jct: ""     # <-- 必填
+    buvid3: ""       # <-- 必填
+
+# TTS语音配置
+tts:
+  enable: true
+  use_pyttsx3: true  # 使用本地pyttsx3引擎
+  rate: 190          # 语速
+  volume: 0.9        # 音量
+
+# LLM配置
+settings:
+  api_key: "sk-xxx"  # <-- 修改为你的API Key
+  api_base: "https://api.deepseek.com"
+  model: "deepseek-chat"
+  system_prompt: |
+    你是iGEM团队的AI助手，正在B站直播与观众互动。
+    你性格活泼可爱，对合成生物学充满热情。
+    回复要简洁有趣，控制在50字左右。
+    当观众问及项目问题时，可以参考知识库回答。

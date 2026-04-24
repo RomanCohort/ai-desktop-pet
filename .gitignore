@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.vscode/
+build/
+dist/
+logs/
+kb/
+multimodal/
+*.exe
+*.log
+*.pyc
+*.json
+*.err
+*.out
+*.spec
+source.png
